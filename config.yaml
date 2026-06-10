@@ -1,0 +1,25 @@
+# Bluestock Mutual Fund Platform Config Settings
+
+database:
+  db_path: "data/db/bluestock_mf.db"
+  schema_path: "sql/schema.sql"
+
+directories:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  reports_dir: "reports"
+
+scorecard:
+  weights:
+    cagr: 0.30
+    sharpe: 0.25
+    alpha: 0.20
+    drawdown: 0.10
+    expense: 0.15
+
+ml_settings:
+  kmeans_clusters: 4
+  random_state: 42
+
+financials:
+  risk_free_rate: 0.065

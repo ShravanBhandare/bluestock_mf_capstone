@@ -1,0 +1,29 @@
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# Database files (Exclude raw database)
+data/db/*.db
+data/db/*.sqlite3
+data/db/*.db-journal
+data/db/*.db-wal
+data/db/*.db-shm
+
+# Processed and temporary files
+data/processed/*.csv
+logs/
+*.log
+
+# Reports output
+reports/*.pdf
+reports/*.pptx
+
+# OS files
+.DS_Store
+Thumbs.db
